@@ -1,3 +1,7 @@
+*{
+    font-family: Roboto;
+}
+
 body {
     --btn-primary: #7D7DF7;
     --border: #C0BFBF;
@@ -9,11 +13,16 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var(--border);
 }
 
 .navbar a {
     color: var(--link-color);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--btn-primary);
+    text-decoration: none;
 }
 
 .pages {
@@ -30,6 +39,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 24px;
+    padding: 15px;
 }
 
 .head {
@@ -43,6 +53,7 @@ body {
 }
 
 .title {
+    font-size: 3em;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -112,6 +123,10 @@ body {
     background-color: var(--btn-primary);
     padding: 4px 12px;
     color: white !important;
+}
+
+.btn:hover{
+    background-color: var(--btn-primary-dark);
 }
 
 .copy {
