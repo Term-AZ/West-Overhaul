@@ -1,0 +1,169 @@
+.contact {
+    position: relative;
+    line-height: 24px;
+  }
+  .frame1 {
+    width: 194px;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 53px;
+  }
+  .frame,
+  .path-icon {
+    position: absolute;
+    overflow: hidden;
+  }
+  .frame {
+    top: -1796px;
+    left: 77px;
+    width: 769px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .path-icon {
+    height: 100%;
+    width: 65.75%;
+    top: 0;
+    right: -3.06%;
+    bottom: 0;
+    left: 37.3%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    mix-blend-mode: normal;
+  }
+  .stock-vector-black-ink-splash-icon {
+    position: absolute;
+    top: 31px;
+    left: 88px;
+    width: 2px;
+    height: 1px;
+    object-fit: cover;
+  }
+  .copyright-2023 {
+    position: absolute;
+    top: 895px;
+    left: 0;
+    font-size: var(--font-size-xs);
+    font-family: var(--font-inter);
+    color: var(--color-gray-200);
+  }
+  .button-label {
+    position: relative;
+    line-height: 26px;
+    font-weight: 500;
+    display: inline-block;
+    width: 382px;
+  }
+  .elementbuttonlargefilled,
+  .elementbuttonlargefilled1 {
+    position: absolute;
+    height: calc(100% - 921px);
+    width: calc(100% - 1516px);
+    top: 580.5px;
+    right: 1448px;
+    bottom: 340.5px;
+    left: 68px;
+    border-radius: var(--br-11xs);
+    background-color: var(--colour-main-blue-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .elementbuttonlargefilled1 {
+    top: 656.5px;
+    bottom: 264.5px;
+  }
+  .title {
+    position: absolute;
+    width: calc(100% - 1278px);
+    top: 277.5px;
+    left: 68px;
+    font-size: 60px;
+    letter-spacing: 1px;
+    line-height: 66px;
+    font-weight: 500;
+    color: var(--colour-main-blue-900);
+    display: inline-block;
+    height: 88px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+  }
+  .screenshot-2023-11-23-013003-r-icon {
+    position: absolute;
+    top: 72.5px;
+    left: 68px;
+    width: 302px;
+    height: 190px;
+    object-fit: cover;
+  }
+  .body {
+    position: absolute;
+    width: calc(100% - 1543px);
+    top: 425.5px;
+    left: 68px;
+    line-height: 30px;
+    color: var(--colour-main-blue-500);
+    display: inline-block;
+    height: 54px;
+  }
+  .picture1-1-icon {
+    position: absolute;
+    top: 31.5px;
+    left: 863px;
+    width: 408px;
+    height: 838px;
+    object-fit: cover;
+  }
+  .frame4 {
+    position: undefined;
+    width: 1898px;
+    height: 979px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-left: 36px;
+  }
+  .frame2,
+  .frame3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .frame3 {
+    align-self: stretch;
+    height: 1052px;
+    overflow: hidden;
+    flex-shrink: 0;
+    justify-content: flex-start;
+  }
+  .frame2 {
+    position: absolute;
+    top: 38px;
+    left: 36px;
+    width: 1404px;
+    height: 1101px;
+    justify-content: center;
+    font-size: var(--font-size-5xl);
+    color: var(--colour-secondary-white-100-general);
+  }
+  .downloads-app-vers {
+    position: relative;
+    background-color: var(--colour-secondary-white-100-general);
+    width: 100%;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--regular-14-size);
+    color: var(--colour-main-blue-500);
+    font-family: var(--regular-14);
+  }
+  

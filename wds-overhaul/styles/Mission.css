@@ -1,0 +1,117 @@
+.contact5,
+.contact6 {
+  position: absolute;
+  width: 6.32%;
+  top: calc(50% - 2296px);
+  left: 38.13%;
+  line-height: 24px;
+  display: inline-block;
+}
+.contact6 {
+  width: 3.47%;
+  left: 48.13%;
+}
+.inklink-1-removebg-preview-1-icon {
+  position: absolute;
+  top: -6px;
+  left: -94px;
+  width: 268px;
+  height: 50px;
+  object-fit: cover;
+}
+.logolandie {
+  position: absolute;
+  top: 4473px;
+  left: 680px;
+  width: 79px;
+  height: 38px;
+}
+.stock-vector-black-ink-splash-icon1 {
+  position: absolute;
+  top: 108px;
+  left: 130px;
+  width: 2px;
+  height: 1px;
+  object-fit: cover;
+}
+.copyright-20231 {
+  position: absolute;
+  top: 1040px;
+  left: 21px;
+  font-size: var(--font-size-xs);
+  font-family: var(--font-inter);
+  color: var(--color-gray-200);
+}
+.title1 {
+  position: relative;
+  letter-spacing: 1px;
+  line-height: 66px;
+  font-weight: 500;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+}
+.title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+}
+.here-at-inklink {
+  margin-block-start: 0;
+  margin-block-end: 14px;
+}
+.whether-you-are {
+  margin: 0;
+}
+.body1 {
+  position: relative;
+  line-height: 30px;
+}
+.body-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+  font-size: var(--font-size-5xl);
+  color: var(--colour-main-blue-500);
+}
+.frame-div {
+  position: absolute;
+  top: 177px;
+  left: 71px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 56px;
+  font-size: var(--font-size-45xl);
+  color: var(--colour-main-blue-900);
+}
+.image-5-icon,
+.image-6-icon {
+  position: absolute;
+  top: 669px;
+  left: 0;
+  border-radius: var(--br-17xl);
+  width: 1225px;
+  height: 822px;
+  object-fit: cover;
+}
+.image-6-icon {
+  top: 208px;
+  left: 1085px;
+  width: 1373px;
+  height: 922px;
+}
+.mission1 {
+  position: relative;
+  background-color: var(--colour-secondary-white-100-general);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--regular-14-size);
+  color: var(--colour-main-blue-500);
+  font-family: var(--regular-14);
+}

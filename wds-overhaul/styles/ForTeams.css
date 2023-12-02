@@ -1,0 +1,127 @@
+.for-teams-child {
+    position: absolute;
+    top: -36px;
+    left: -42px;
+    background-color: var(--color-mediumslateblue);
+    width: 2000px;
+    height: 888px;
+  }
+  .contact7,
+  .contact8 {
+    position: absolute;
+    width: 6.32%;
+    top: calc(50% - 2296px);
+    left: 38.13%;
+    line-height: 24px;
+    display: inline-block;
+  }
+  .contact8 {
+    width: 3.47%;
+    left: 48.13%;
+  }
+  .inklink-1-removebg-preview-1-icon1 {
+    position: absolute;
+    top: -6px;
+    left: -94px;
+    width: 268px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .logolandie1 {
+    position: absolute;
+    top: 4473px;
+    left: 680px;
+    width: 79px;
+    height: 38px;
+  }
+  .stock-vector-black-ink-splash-icon2 {
+    position: absolute;
+    top: 108px;
+    left: 130px;
+    width: 2px;
+    height: 1px;
+    object-fit: cover;
+  }
+  .copyright-20232 {
+    position: absolute;
+    top: 1040px;
+    left: 21px;
+    font-size: var(--font-size-xs);
+    font-family: var(--font-inter);
+    color: var(--color-gray-200);
+  }
+  .for-teams-item {
+    position: absolute;
+    top: 194px;
+    left: 106px;
+  }
+  .body2,
+  .title2 {
+    position: relative;
+  }
+  .title2 {
+    letter-spacing: 1px;
+    line-height: 66px;
+    font-weight: 500;
+    display: inline-block;
+    width: 758px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+  }
+  .body2 {
+    font-size: var(--font-size-5xl);
+    line-height: 30px;
+    color: var(--colour-main-blue-500);
+  }
+  .title-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 42px;
+  }
+  .frame-wrapper4,
+  .frame-wrapper5,
+  .frame-wrapper6 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-wrapper4,
+  .frame-wrapper5 {
+    flex-direction: column;
+  }
+  .frame-wrapper4 {
+    padding: var(--padding-3xs);
+  }
+  .pexels-fauxels-3183150-1-icon {
+    position: relative;
+    border-radius: 7px;
+    width: 886.2px;
+    height: 594px;
+    object-fit: cover;
+  }
+  .frame-parent2 {
+    position: absolute;
+    top: 108px;
+    left: 106px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 63px;
+    font-size: var(--font-size-45xl);
+    color: var(--colour-main-blue-900);
+  }
+  .for-teams {
+    position: relative;
+    background-color: var(--colour-secondary-white-100-general);
+    width: 100%;
+    height: 1080px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--regular-14-size);
+    color: var(--colour-main-blue-500);
+    font-family: var(--regular-14);
+  }
+  
