@@ -9,6 +9,9 @@ var validate_email = require('./validate/validate_email.js')
 var validate_password = require('./validate/validate_password.js')
 const db = require('./db/db.js')
 
+var generate_token = require('./jwt/generate_token.js')
+var validate_token = require('./jwt/validate_token.js')
+
 var app = express();
 const port = 8000;
 
@@ -24,7 +27,11 @@ app.listen(port, ()=>{
 
 
 app.post('/user/register', (req,res)=>{
-    const {email, nickname, password} = req.body
+    console.log(req.body)
+    const email = req.body[0][1]
+    const nickname = req.body[1][1]
+    const password = req.body[2][1]
+
     if(!validate_email(email)){
         return res.status(400).send({"msg": "Please input valid email"})
     }
@@ -55,7 +62,8 @@ app.post('/user/register', (req,res)=>{
 })
 
 app.post('/user/login',(req,res)=>{
-    const {email , password} = req.body
+    const email = req.body[0][1]
+    const password = req.body[1][1]
     var q ="SELECT * FROM users WHERE user_email = ?"
     db.query(q,[email], (err,result)=>{
         if(result[0] ==null){
@@ -64,16 +72,19 @@ app.post('/user/login',(req,res)=>{
         bcrypt.compare(password, result[0].user_password, function(err, hashresult){
             if(err){console.log(err) ; return res.status(500).send({"msg":"Error has occured"})}
             if(hashresult){
-                // var token = generate_token({id:result[0].id,email: email, admin:result[0].admin})
-                // return res
-                //     .cookie('refreshToken', generate_refresh({email: email, admin:result[0].admin}), { httpOnly: true, sameSite: 'strict',path:"/" })
-                //     .header('Authorization', token)
-                //     .json({
-                //             id: result[0].id,
-                //             email: email,
-                //             admin: result[0].admin,
-                //             authorization:  token
-                //         });
+                console.log("here")
+                //var token = generate_token({id:result[0].id, email: email})
+                return res.cookie('jwtToken', generate_token({email: email, admin:result[0].admin}), { httpOnly: true, sameSite: 'strict',path:"/" })
+                    .json({
+                        email:email
+                    })
+                    // .header('Authorization', token)
+                    // .json({
+                    //         id: result[0].id,
+                    //         email: email,
+                    //         admin: result[0].admin,
+                    //         authorization:  token
+                    //     });
             }else{
                 return res.status(400).send({"msg":"Password does not match"})
             }
@@ -82,3 +93,8 @@ app.post('/user/login',(req,res)=>{
     })
 })
 
+app.get('/validate/token', validate_token, (req,res)=>{
+    if(res.email){
+        return res.status(200).send("ok")
+    }
+})

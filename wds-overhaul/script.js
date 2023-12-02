@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", attachListeners);
-document.addEventListener("DOMContentLoaded", checkPage);
+// document.addEventListener("DOMContentLoaded", checkPage);
 
 function attachListeners() {
     document.querySelector('.login_form')?.addEventListener('submit', login);
@@ -22,13 +22,25 @@ function addFile() {
     filebar.appendChild(newFileButton);
 }
 
-function checkPage() {
-    let username = localStorage.getItem('username');
-    if (window.location.href.includes('login.html') && username)
-        window.location = 'notes.html';
-    if (window.location.href.includes('notes.html') && !username)
-        window.location = 'login.html';
-}
+// function checkPage() {
+    // fetch('/validate/token',{
+    //     method:"GET",
+    //     headers:{"Content-Type":"application/json"},
+    //     credentials: 'include'
+    // }).then(response=>{
+    //     if(response.ok){
+    //         window.location = 'notes.html';
+    //     }else{
+    //         window.location = 'login.html';
+    //     }
+    // })
+
+    // let username = localStorage.getItem('username');
+    // if (window.location.href.includes('login.html') && username)
+    //     window.location = 'notes.html';
+    // if (window.location.href.includes('notes.html') && !username)
+    //     window.location = 'login.html';
+// }
 
 function login(event) {
     event.preventDefault();
@@ -48,3 +60,4 @@ function logout(event) {
     localStorage.removeItem('password');
     window.location.href = 'login.html';
 }
+

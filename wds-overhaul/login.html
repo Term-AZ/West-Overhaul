@@ -32,10 +32,12 @@
       </div>
     </div>
     <div class="main">
-        <form class="login_form">
-            <input type="username" placeholder="Username...">
-            <input type="password" placeholder="Password...">
+        <form class="login_form" id='login_form'>
+            <input type="username" name="email" placeholder="Username...">
+            <input type="password" name="password" placeholder="Password...">
             <input type="submit" value="Log In">
+            <p class = 'error_log' id="error_log"></p>
+            <a href="register.html">Don't have an account? Create one here!</a>
         </form>
     </div>
     <script src="tts.js"></script>
