@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>InkLink</title>
+    <title>InkLink | Notes</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="assets/link.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
   </head>
   <body>
     <div class="navbar">
         <div class="pages">
-          <img src="assets/logo.png" alt="logo">
+          <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
           <a href="index.html">Home</a>
           <a href="pricing.html">Pricing</a>
           <a href="teams.html">For Teams</a>
@@ -19,6 +23,7 @@
           <a href="mission.html">Mission</a>
         </div>
         <div class="general">
+          <div id="google_translate_element"></div>
           <a href="help.html">Help</a>
           <a href="index.html" class="logout">Logout</a>
           <a href="download.html" class="btn">Download</a>
@@ -40,4 +45,6 @@
     </div>
   </body>
   <script src="script.js"></script>
+  <script type="text/javascript" src="translate.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </html>
