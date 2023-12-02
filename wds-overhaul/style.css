@@ -71,7 +71,7 @@ body {
 .description {
     width: 80%;
     display: inline;
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Roboto';
 }
 
@@ -338,6 +338,14 @@ overflow: hidden;
     }
 }
 
-
-
-
+select{
+    appearance: none;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.675em 1em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid var(--btn-primary);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+}
