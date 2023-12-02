@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>InkLink</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/register.css">
     <link rel="icon" href="assets/link.png" type="image/x-icon">
   </head>
   <body>
@@ -25,7 +26,42 @@
         </div>
       </div>
     <div class="main">
-        Register
+      <div className='auth_background'>
+        <div className='auth_scrolling_image'>
+            <div className='auth_info_container'>
+                <form id="create_account">
+                    <label>Email</label>
+                    <input className='text_input'
+                        type="text" 
+                        name="email" 
+                        required
+                    />
+                    <label>Nickname</label>
+                    <input  className='text_input'
+                        type="text" 
+                        name="nickname" 
+                        required
+                    />
+                    <label>Password</label>
+                    <input  className='text_input'
+                        type="password" 
+                        name="password" 
+                        required
+                    />
+                    <label>Confirm Password</label>
+                    <input  className='text_input'
+                        type="password" 
+                        name="confirm_password" 
+                        required
+                    />
+
+                    <input className='submit' type='submit' id='submit' value='Create Account'></input>
+                    <p className = 'error_log' id="error_log"></p>
+                    <a href="login.html">Already have an account? Login here!</a>
+                </form>
+            </div>
+        </div>
+    </div>
     </div>
   </body>
 </html>
