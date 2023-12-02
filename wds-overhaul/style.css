@@ -197,6 +197,7 @@ body {
 }
 
 
+
 .pricing-body{
     overflow: hidden;
 }
@@ -215,7 +216,7 @@ overflow: hidden;
 .pricing-container {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 14rem;
     height: 100vh;
 
     .pricing-title {

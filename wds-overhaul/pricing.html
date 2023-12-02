@@ -18,6 +18,7 @@
           <a href="teams.html">For Teams</a>
           <a href="individuals.html">For Individuals</a>
           <a href="mission.html">Mission</a>
+          <button id="toggleBtn">Toggle TTS</button>
         </div>
         <div class="general">
           <a href="help.html">Help</a>
@@ -29,7 +30,7 @@
       <div class="background-container"></div>
       <div class="pricing-container">
         <div class="pricing-title">
-          <img src="./assets/link.png" alt="InkLink logo" id="link-logo">
+          
           <h1 id="pricing-title-text">Our Plans And Pricing</h1>
         </div>
 
@@ -39,7 +40,7 @@
             <h3 class="price">Free</h3>
             <div class="tier-point">
               <i class="fa-solid fa-square-check fa-3x"></i> 
-              <p>Simple, easy-to-use, and completely free!</p>
+              <p class="speakable" data-text="Simple, easy-to-use, and completely free!">Simple, easy-to-use, and completely free!</p>
             </div>
 
             <div class="tier-point">
@@ -81,7 +82,7 @@
 
       
     </div>
-
+    <script src="tts.js"></script>
   </body>
 </html>
 
