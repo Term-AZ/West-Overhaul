@@ -212,30 +212,31 @@ mix-blend-mode: normal;
 overflow: hidden;
 }
 
-.pricing-container{
+.pricing-container {
     display: flex;
     flex-direction: column;
     gap: 4rem;
     height: 100vh;
-    .pricing-title{
 
-        #link-logo{
-            width: 100%;
+    .pricing-title {
+        padding: 0;
+        margin: none;
+
+        #link-logo {
             margin: 0 auto;
             position: relative;
-            width: 18.875rem;
-            height: 11.875rem;
-            top: 4.3rem;
+            width: 16rem;
+            height: 10rem;
+            top: 0.5rem;
             left: 5rem;
         }
-    
-        #pricing-title-text{
+
+        #pricing-title-text {
             position: absolute;
             height: 88px;
-            left: 7rem;
+            left: 1rem;
             right: 374px;
-            top: 10rem;
-            font-family: 'Roboto';
+            top: 5rem;
             font-style: normal;
             font-weight: 600;
             font-size: 4rem;
@@ -246,15 +247,81 @@ overflow: hidden;
         }
     }
 
-    .tier-container{
-        width: 70rem;
-        height: 33rem;
-        border: 3px solid black;
+    .tier-container {
+        display: flex;
+        padding: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 69rem;
+        height: 34rem;
         margin-left: 2rem;
-        opacity: 1;
-        background-color: #F1F1F1B2;
+        background-color: lightblue;
+        border-radius: 10px;
+
+        .basic-tier,
+        .premium-tier {
+            width: 29.625rem;
+            height: 33.938rem;
+            background-color: #ffffff;
+            z-index: 20;
+            border-radius: 10px;
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 1.5rem;
+            justify-content: space-evenly;
+            box-shadow: 0px 4px 4px 0px #00000040;
+            box-sizing: border-box; 
+        }
+
+        .tier-title {
+            font-family: Roboto;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 66px;
+            letter-spacing: 1px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .tier-point {
+            display: flex;
+            gap: 2rem;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0px;
+            text-align: left;
+            align-items: center;
+        }
+
+        .price {
+            text-align: center;
+            font-size: 2rem;
+            margin: 0;
+            color: #7B7B7B;
+        }
+
+        .pricing-button {
+            margin: auto;
+            width: 23rem;
+            height: 2.5rem;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0px;
+            text-align: center;
+            background-color: #111B47;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+        }
     }
 }
+
 
 
 
