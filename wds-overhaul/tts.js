@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     let isTTSActive = false;
     let synth = window.speechSynthesis;
+    let focusedElement = null;
   
     function speak(text) {
       let utterance = new SpeechSynthesisUtterance(text);
@@ -25,10 +26,25 @@ document.addEventListener('DOMContentLoaded', function() {
         speak(text);
       }
     }
-  
+
+    function handleFocus(event) {
+      if (isTTSActive) {
+        focusedElement = event.target;
+        let text = focusedElement.getAttribute('data-text');
+        speak(text);
+      }
+    }
+
+    function handleBlur() {
+      if (isTTSActive) {
+        focusedElement = null;
+      }
+    }
+
     toggleBtn.addEventListener('click', toggleTTS);
     speakables.forEach(element => {
       element.addEventListener('mouseover', handleSpeakableHover);
+      element.addEventListener('focus', handleFocus);
+      element.addEventListener('blur', handleBlur);
     });
   });
-  

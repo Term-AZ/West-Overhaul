@@ -1,10 +1,13 @@
+body{
+  overflow: hidden;
+}
 .for-individuals-child {
   position: absolute;
   top: 0;
   left: 0;
   background-color: #69c8ff;
   width: 1920px;
-  height: 784px;
+  height: 100vh;
 }
 .contact5,
 .contact6 {

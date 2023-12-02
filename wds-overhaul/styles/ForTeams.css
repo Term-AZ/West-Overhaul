@@ -1,10 +1,13 @@
+body{
+  overflow: hidden;
+}
 .for-teams-child {
     position: absolute;
     top: -36px;
     left: -42px;
     background-color: var(--color-mediumslateblue);
     width: 2000px;
-    height: 888px;
+    height: 100vh;
   }
   .contact7,
   .contact8 {
