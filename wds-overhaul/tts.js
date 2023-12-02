@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     toggleBtn.addEventListener('click', toggleTTS);
     speakables.forEach(element => {
-      element.addEventListener('mouseover', handleSpeakableHover);
       element.addEventListener('focus', handleFocus);
       element.addEventListener('blur', handleBlur);
     });
