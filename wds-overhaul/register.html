@@ -15,20 +15,22 @@
   </head>
   <body>
     <div class="navbar">
-        <div class="pages">
-          <img src="assets/logo.png" alt="logo">
-          <a href="index.html">Home</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="teams.html">For Teams</a>
-          <a href="individuals.html">For Individuals</a>
-          <a href="mission.html">Mission</a>
-        </div>
-        <div class="general">
-          <a href="help.html">Help</a>
-          <a href="login.html">Login</a>
-          <a href="download.html" class="btn">Download</a>
-        </div>
+      <div class="pages">
+        <img src="assets/logo.png" alt="logo">
+        <a tabindex="1" class="speakable" data-text="You are on the navbar"></a>
+        <a href="index.html" tabindex="1" class="speakable" data-text="Home">Home</a>
+        <a href="pricing.html" tabindex="2" class="speakable" data-text="Pricing">Pricing</a>
+        <a href="teams.html" tabindex="3" class="speakable" data-text="InkLink for teams">For Teams</a>
+        <a href="individuals.html" tabindex="4" class="speakable" data-text="InkLink for individuals">For Individuals</a>
+        <a href="mission.html" tabindex="5" class="speakable" data-text="Our Mission">Mission</a>
+        <button id="toggleBtn" tabindex="6">Toggle TTS</button>
       </div>
+      <div class="general">
+        <a href="help.html" class="speakable" tabindex="7" data-text="Get help">Help</a>
+        <a href="login.html" class="speakable" tabindex="8" data-text="Login">Login</a>
+        <a href="download.html" class="speakable" tabindex="9" class="btn" tabindex="9" data-text="Download InkLink">Download</a>
+      </div>
+    </div>
     <div class="main">
       <div className='auth_background'>
         <div className='auth_scrolling_image'>
@@ -67,5 +69,6 @@
         </div>
     </div>
     </div>
+    <script src="tts.js"></script>
   </body>
 </html>
