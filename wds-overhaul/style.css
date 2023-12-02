@@ -195,3 +195,66 @@ body {
     height: 28px;
     font-size: 20px;
 }
+
+
+.pricing-body{
+    overflow: hidden;
+}
+
+.background-container{
+position: absolute;
+left: 53.82%;
+right: -40.49%;
+top: 21.5%;
+bottom: -19.4%;
+background-image: url(./assets/splash-img.png);
+mix-blend-mode: normal;
+overflow: hidden;
+}
+
+.pricing-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: 100vh;
+    .pricing-title{
+
+        #link-logo{
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            width: 18.875rem;
+            height: 11.875rem;
+            top: 4.3rem;
+            left: 5rem;
+        }
+    
+        #pricing-title-text{
+            position: absolute;
+            height: 88px;
+            left: 7rem;
+            right: 374px;
+            top: 10rem;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 4rem;
+            line-height: 4.125rem;
+            text-align: center;
+            letter-spacing: 1px;
+            color: #091133;
+        }
+    }
+
+    .tier-container{
+        width: 70rem;
+        height: 33rem;
+        border: 3px solid black;
+        margin-left: 2rem;
+        opacity: 1;
+        background-color: #F1F1F1B2;
+    }
+}
+
+
+
