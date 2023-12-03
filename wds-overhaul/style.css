@@ -349,3 +349,26 @@ select{
     cursor: pointer;
     position: relative;
 }
+
+
+
+.login-reg-body{
+    background-image: url(./assets/loginBack.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+.text_input{
+    border-radius: 30px;
+    border: none;
+    background-color: #091133;
+    color: white;
+}
+
+.submit{
+    border-radius: 20px;
+    background-color: #505F98;
+    border: none;
+    color: white;
+}

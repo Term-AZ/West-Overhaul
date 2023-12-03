@@ -15,6 +15,22 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
     />
     <link rel="stylesheet" href="./style.css">
+    <style>
+
+      .faq-wrapper:hover {
+        color: gold; /* Change the background color on hover */
+      }
+      .faq-answer {
+        display: none;
+        margin-top: 10px;
+        margin-left: 5px;
+        color: black;
+      }
+
+      .frame-wrapper:hover .faq-answer {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <div class="navbar">
@@ -26,7 +42,6 @@
         <a href="teams.html" tabindex="3" class="speakable" data-text="InkLink for teams">For Teams</a>
         <a href="individuals.html" tabindex="4" class="speakable" data-text="InkLink for individuals">For Individuals</a>
         <a href="mission.html" tabindex="5" class="speakable" data-text="Our Mission">Mission</a>
-        <button id="toggleBtn" tabindex="6">Toggle TTS</button>
       </div>
       <div class="general">
         <div id="google_translate_element"></div>
@@ -50,7 +65,7 @@
         alt=""
         src="./public/stockvectorblackinksplashwithswirlsonwhiteabstractbackground562910965-11@2x.png"
       />
-
+  
       <div class="copyright-20231">
         Copyright © 2023, Western Developers Society
       </div>
@@ -60,24 +75,33 @@
             <div class="title1">FAQs</div>
           </div>
         </div>
-        <div class="frame-wrapper2">
+        <div class="frame-wrapper2" onclick="toggleFAQ('faq-answer-1')">
           <div class="title-wrapper">
             <div class="body1">
               Can I customize what features are available?
             </div>
+            <div class="faq-answer" id="faq-answer-1">
+              Yes, you can customize features by accessing your account settings.
+            </div>
           </div>
         </div>
-        <div class="frame-wrapper3">
+        <div class="frame-wrapper3" onclick="toggleFAQ('faq-answer-2')">
           <div class="title-wrapper">
             <div class="body1">
               Can I upgrade or downgrade between subscription tiers?
             </div>
+            <div class="faq-answer" id="faq-answer-2">
+              Yes, you can upgrade or downgrade at any time in your account settings.
+            </div>
           </div>
         </div>
-        <div class="frame-wrapper3">
+        <div class="frame-wrapper3" onclick="toggleFAQ('faq-answer-3')">
           <div class="title-wrapper">
             <div class="body1">
               Can I pay for the subscription by bank transfer?
+            </div>
+            <div class="faq-answer" id="faq-answer-3">
+              Currently, we only support payments through credit cards.
             </div>
           </div>
         </div>
@@ -85,7 +109,7 @@
       <div class="blue-box">
         <div class="blue-box-child"></div>
         <img class="path-icon1" alt="" src="./public/path1@2x.png" />
-
+  
         <div class="elementbuttonlargefilled-co">
           <div class="button-label-wrapper">
             <div class="button-label2">Search</div>
@@ -96,5 +120,11 @@
     <script src="tts.js"></script>
     <script type="text/javascript" src="translate.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      function toggleFAQ(id) {
+        var faqAnswer = document.getElementById(id);
+        faqAnswer.style.display = (faqAnswer.style.display === 'none' || faqAnswer.style.display === '') ? 'block' : 'none';
+      }
+    </script>
   </body>
-</html>
+  </html>

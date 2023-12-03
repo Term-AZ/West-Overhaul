@@ -1,49 +1,56 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleBtn = document.getElementById('toggleBtn');
-    const speakables = document.querySelectorAll('.speakable');
-  
-    let isTTSActive = false;
-    let synth = window.speechSynthesis;
-    let focusedElement = null;
-  
-    function speak(text) {
+document.addEventListener('DOMContentLoaded', function () {
+  const speakables = document.querySelectorAll('.speakable');
+
+  let isTTSActive = false;
+  let synth = window.speechSynthesis;
+  let focusedElement = null;
+
+  function speak(text) {
       let utterance = new SpeechSynthesisUtterance(text);
       synth.speak(utterance);
-    }
-  
-    function toggleTTS() {
-      isTTSActive = !isTTSActive;
-      toggleBtn.textContent = isTTSActive ? 'Turn off TTS' : 'Turn on TTS';
+  }
 
-      if (isTTSActive && window.location.pathname === './pricing.html') {
-        speak("Welcome to the specific page. This is a sample message.");
-      }
-    }
-  
-    function handleSpeakableHover(event) {
+  function enableTTS() {
+      isTTSActive = true;
+      speak("You have enabled text-to-speech");
+  }
+
+  function disableTTS() {
+      isTTSActive = false;
+  }
+
+  function handleSpeakableHover(event) {
       if (isTTSActive) {
-        let text = event.currentTarget.getAttribute('data-text');
-        speak(text);
+          let text = event.currentTarget.getAttribute('data-text');
+          speak(text);
       }
-    }
+  }
 
-    function handleFocus(event) {
+  function handleFocus(event) {
       if (isTTSActive) {
-        focusedElement = event.target;
-        let text = focusedElement.getAttribute('data-text');
-        speak(text);
+          focusedElement = event.target;
+          let text = focusedElement.getAttribute('data-text');
+          speak(text);
       }
-    }
+  }
 
-    function handleBlur() {
+  function handleBlur() {
       if (isTTSActive) {
-        focusedElement = null;
+          focusedElement = null;
       }
-    }
+  }
 
-    toggleBtn.addEventListener('click', toggleTTS);
-    speakables.forEach(element => {
+  function handleKeyDown(event) {
+      // Check if F6 key is pressed (key code 117 for F6)
+      if (event.keyCode === 115) {
+          isTTSActive ? disableTTS() : enableTTS();
+      }
+  }
+
+  document.addEventListener('keydown', handleKeyDown);
+
+  speakables.forEach(element => {
       element.addEventListener('focus', handleFocus);
       element.addEventListener('blur', handleBlur);
-    });
   });
+});

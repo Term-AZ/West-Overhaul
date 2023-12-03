@@ -129,3 +129,19 @@ body{
   color: var(--colour-main-blue-500);
   font-family: var(--regular-14);
 }
+
+.signup-individual{
+  width: 23rem;
+  height: 2rem;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  background-color: #111B47;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px;
+}

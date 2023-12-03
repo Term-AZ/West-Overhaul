@@ -17,32 +17,31 @@
     <div class="navbar">
         <div class="pages">
           <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
-          <a tabindex="1" class="speakable" data-text="You are on the navbar"></a>
+          <a tabindex="1" class="speakable" onkeydown="if(event.key === 'Enter') { document.getElementById('pricing-title-text').focus(); }" data-text="You are on the navbar, this is the pricing page. Press enter to skip directly to page content."></a>
           <a href="index.html" tabindex="1" class="speakable" data-text="Home">Home</a>
           <a href="pricing.html" tabindex="2" class="speakable" data-text="Pricing">Pricing</a>
           <a href="teams.html" tabindex="3" class="speakable" data-text="InkLink for teams">For Teams</a>
           <a href="individuals.html" tabindex="4" class="speakable" data-text="InkLink for individuals">For Individuals</a>
           <a href="mission.html" tabindex="5" class="speakable" data-text="Our Mission">Mission</a>
-          <button id="toggleBtn" tabindex="6">Toggle TTS</button>
         </div>
         <div class="general">
           <div id="google_translate_element"></div>
-          <a href="help.html" class="speakable" tabindex="7" data-text="Get help">Help</a>
-          <a href="login.html" class="speakable" tabindex="8" data-text="Login">Login</a>
-          <a href="download.html" class="speakable btn" tabindex="9" data-text="Download InkLink">Download</a>
+          <a href="help.html" class="speakable" tabindex="6" data-text="Get help">Help</a>
+          <a href="login.html" class="speakable" tabindex="7" data-text="Login">Login</a>
+          <a href="download.html" class="speakable btn" tabindex="8" data-text="Download InkLink">Download</a>
         </div>
       </div>
     <div class="main">
       <div class="background-container"></div>
       <div class="pricing-container">
         <div class="pricing-title">
-          <h1 id="pricing-title-text" tabindex="10">Our Plans And Pricing</h1>
+          <h1 id="pricing-title-text" class="speakable" tabindex="10" data-text="The following is a description of our plans and pricing">Our Plans And Pricing</h1>
         </div>
 
         <div class="tier-container">
           <div class="basic-tier">
-            <h2 class="tier-title" tabindex="11">Link Basic</h2>
-            <h3 class="price" tabindex="12">Free</h3>
+            <h2 class="tier-title speakable" data-text="This is the information for our basic tier" tabindex="11">Link Basic</h2>
+            <h3 class="price speakable" data-text="This basic tier is free to use, the following features are included" tabindex="12">Free</h3>
             <div class="tier-point">
               <i class="fa-solid fa-square-check fa-3x"></i> 
               <p class="speakable" tabindex="13" data-text="Simple, easy-to-use, and completely free!">Simple, easy-to-use, and completely free!</p>
@@ -50,36 +49,36 @@
 
             <div class="tier-point">
               <i class="fa-solid fa-square-check fa-3x"></i>
-              <p tabindex="14">Accessible voice to text feature</p> 
+              <p class="speakable" tabindex="14" data-text="Accessible voice to text feature">Accessible voice to text feature</p> 
             </div>
 
             <div class="tier-point">
               <i class="fa-solid fa-square-check fa-3x"></i> 
-              <p tabindex="15">Basic note functions and features included!</p>
+              <p class="speakable" tabindex="15" data-text="Basic note functions and features included!">Basic note functions and features included!</p>
             </div>
             
-            <button class="pricing-button" tabindex="16">Get Started!</button>
+            <button class="pricing-button speakable" data-text="This is the button to choose the basic tier" tabindex="16">Get Started!</button>
           </div>
 
           <div class="premium-tier">
-            <h2 class="tier-title" tabindex="17">Link Premium</h2>
-            <h3 class="price" tabindex="18">$0.99/month</h3>
+            <h2 class="tier-title speakable" data-text="This is the information for our premium tier" tabindex="17">Link Premium</h2>
+            <h3 class="price speakable" tabindex="18" data-text="This premium tier costs 0.99 dollars per month to use, the following features are included">$0.99/month</h3>
             <div class="tier-point">
               <i class="fa-solid fa-square-check fa-3x"></i> 
-              <p tabindex="19">Unlimited notes, colors and edits</p>
+              <p class="speakable" tabindex="19" data-text="Unlimited notes, colors and edits">Unlimited notes, colors and edits</p>
             </div>
 
             <div class="tier-point">
               <i class="fa-solid fa-square-check fa-3x"></i>
-              <p tabindex="20">Math and physics help feature</p> 
+              <p class="speakable" tabindex="20" data-text="Math and physics help feature">Math and physics help feature</p> 
             </div>
 
             <div class="tier-point">
               <i class="fa-solid fa-square-check fa-3x"></i> 
-              <p tabindex="21">Sync to cloud with convenience and ease</p>
+              <p class="speakable" tabindex="21" data-text="Sync to cloud with convenience and ease">Sync to cloud with convenience and ease</p>
             </div>
             
-            <button class="pricing-button" tabindex="22">Subscribe Now</button>
+            <button class="pricing-button speakable" tabindex="22" data-text="This is the button to choose the premium tier">Subscribe Now</button>
           </div>
 
         </div>

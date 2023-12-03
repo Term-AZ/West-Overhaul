@@ -92,6 +92,7 @@
   gap: 24px;
   font-size: var(--font-size-17xl);
 }
+
 .blue-box-child {
   position: absolute;
   top: 0;

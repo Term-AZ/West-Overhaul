@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
     />
   </head>
-  <body>
+  <body class="login-reg-body">
     <div class="navbar">
       <div class="pages">
         <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
@@ -22,7 +22,6 @@
         <a href="teams.html" tabindex="3" class="speakable" data-text="InkLink for teams">For Teams</a>
         <a href="individuals.html" tabindex="4" class="speakable" data-text="InkLink for individuals">For Individuals</a>
         <a href="mission.html" tabindex="5" class="speakable" data-text="Our Mission">Mission</a>
-        <button id="toggleBtn" tabindex="6">Toggle TTS</button>
       </div>
       <div class="general">
         <div id="google_translate_element"></div>
@@ -33,9 +32,9 @@
     </div>
     <div class="main">
         <form class="login_form" id='login_form'>
-            <input type="username" name="email" placeholder="Username...">
-            <input type="password" name="password" placeholder="Password...">
-            <input type="submit" value="Log In">
+            <input class="text_input" type="username" name="email" placeholder="Username...">
+            <input class="text_input" type="password" name="password" placeholder="Password...">
+            <input type="submit" class='submit' value="Log In">
             <p class = 'error_log' id="error_log"></p>
             <a href="register.html">Don't have an account? Create one here!</a>
         </form>
