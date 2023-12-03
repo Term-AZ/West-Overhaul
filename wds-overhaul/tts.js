@@ -53,4 +53,14 @@ document.addEventListener('DOMContentLoaded', function () {
       element.addEventListener('focus', handleFocus);
       element.addEventListener('blur', handleBlur);
   });
+
+
+  function speakNote() {
+    var editorContent = document.querySelector('.ql-editor').innerText;
+    var utterance = new SpeechSynthesisUtterance(editorContent);
+    window.speechSynthesis.speak(utterance);
+  }
+
+  document.getElementById('playNoteButton').addEventListener('click', speakNote);
+
 });

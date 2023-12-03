@@ -23,3 +23,11 @@
     color: #333;
   }
 
+  #startSpeechRecognition{
+    width: 3rem;
+    margin-left: 25px;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: azure;
+  }
+

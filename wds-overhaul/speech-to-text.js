@@ -13,11 +13,17 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!isRecognitionOn) {
         recognition.start();
         isRecognitionOn = true;
-        startSpeechRecognitionBtn.textContent = 'Stop Speech Recognition';
+        startSpeechRecognitionBtn.innerHTML = '';
+        var newIcon = document.createElement("i");
+        newIcon.classList.add("fas", "fa-microphone-slash")
+        startSpeechRecognitionBtn.appendChild(newIcon);
       } else {
         recognition.stop();
         isRecognitionOn = false;
-        startSpeechRecognitionBtn.textContent = 'Start Speech Recognition';
+        startSpeechRecognitionBtn.innerHTML = '';
+        var newIcon = document.createElement("i");
+        newIcon.classList.add("fas", "fa-microphone")
+        startSpeechRecognitionBtn.appendChild(newIcon);
       }
     });
 
