@@ -8,6 +8,7 @@ body {
     --link-color: #505F98;
     --btn-primary-dark: #111b47;
     --btn-secondary: transparent;
+    --tealblue: #38B6FF;
 }
 
 .navbar {
@@ -48,13 +49,12 @@ body {
 .pages {
     display: flex;
     justify-content: flex-start;
-    width: 60%;
+    /* width: 60%; */
     align-items: center;
     gap: 24px;
 }
 
 .general {
-    width: 40%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -117,16 +117,25 @@ body {
     text-align: center;
 }
 
+
+
 .signup {
     background-color: var(--btn-primary-dark);
     color: white;
     border: none;
+}   
+.signup:hover{
+    background-color: var(--tealblue);
+    transition: all .4s ease;
 }
-
 .signin {
     background-color: var(--btn-secondary);
     color: black;
     border: 2px solid black;
+}
+.signin:hover{
+    background-color: var(--btn-primary);
+    transition: all .4s ease;
 }
 
 .splash {
@@ -152,7 +161,8 @@ body {
 }
 
 .btn:hover{
-    background-color: var(--btn-primary-dark);
+    background-color: var(--tealblue);
+    transition: all .4s ease;
 }
 
 .copy {
