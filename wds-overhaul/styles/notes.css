@@ -29,6 +29,7 @@
     height: 3rem;
     border-radius: 50%;
     background-color: azure;
+    cursor: pointer;
   }
 
   #playNoteButton{
@@ -37,6 +38,16 @@
     height: 3rem;
     border-radius: 50%;
     background-color: azure;
+    cursor: pointer;
+  }
+
+  #translateNote{
+    width: 3rem;
+    margin-left: 25px;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: azure;
+    cursor: pointer;
   }
   #myIframe {
     opacity: 0;
