@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <title>InkLink | Download</title>
-    <link rel="stylesheet" href="./styles/global.css" />
+    <!-- <link rel="stylesheet" href="./styles/global.css" /> -->
     <link rel="stylesheet" href="./styles/Download.css" />
     <link
       rel="stylesheet"
@@ -17,69 +17,48 @@
   </head>
   <link rel="stylesheet" href="./style.css">
   <body>
-    <div class="navbar">
-      <div class="pages">
-        <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
-        <a tabindex="1" class="speakable" data-text="You are on the navbar"></a>
-        <a href="index.html" tabindex="1" class="speakable" data-text="Home">Home</a>
-        <a href="pricing.html" tabindex="2" class="speakable" data-text="Pricing">Pricing</a>
-        <a href="teams.html" tabindex="3" class="speakable" data-text="InkLink for teams">For Teams</a>
-        <a href="individuals.html" tabindex="4" class="speakable" data-text="InkLink for individuals">For Individuals</a>
-        <a href="mission.html" tabindex="5" class="speakable" data-text="Our Mission">Mission</a>
-      </div>
-      <div class="general">
-        <div id="google_translate_element"></div>
-        <a href="help.html" class="speakable" tabindex="7" data-text="Get help">Help</a>
-        <a href="login.html" class="speakable" tabindex="8" data-text="Login">Login</a>
-        <a href="download.html" class="speakable btn" tabindex="9" data-text="Download InkLink">Download</a>
-      </div>
-    </div>
-    <div class="downloads-app-vers">
-      <div class="frame">
-        <div class="frame1">
-          <div class="contact">For Individuals</div>
-          <div class="contact">Mission</div>
+    <main>
+      <div class="navbar">
+        <div class="pages">
+          <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
+          <a tabindex="1" class="speakable" onkeydown="if(event.key === 'Enter') { document.getElementById('heading').focus(); }" data-text="You are on the navbar, this is the home page. Press enter to skip directly to page content."></a>
+          <a href="index.html" tabindex="1" class="speakable" data-text="Home">Home</a>
+          <a href="pricing.html" tabindex="2" class="speakable" data-text="Pricing">Pricing</a>
+          <a href="teams.html" tabindex="3" class="speakable" data-text="InkLink for teams">For Teams</a>
+          <a href="individuals.html" tabindex="4" class="speakable" data-text="InkLink for individuals">For Individuals</a>
+          <a href="mission.html" tabindex="5" class="speakable" data-text="Our Mission">Mission</a>
+        </div>
+        <div class="general">
+          <div id="google_translate_element"></div>
+          <a href="help.html" class="speakable" tabindex="6" data-text="Get help">Help</a>
+          <a href="login.html" class="speakable" tabindex="7" data-text="Login">Login</a>
+          <a href="download.html" class="speakable btn" tabindex="8" data-text="Download InkLink">Download</a>
         </div>
       </div>
-      <div class="frame2">
-        <div class="frame3">
-          <div class="frame4">
-            <img class="path-icon" alt="" src="./public/path@2x.png" />
-
-            <img
-              class="stock-vector-black-ink-splash-icon"
-              alt=""
-              src="./public/stockvectorblackinksplashwithswirlsonwhiteabstractbackground562910965-1@2x.png"
-            />
-
-            <div class="copyright-2023">
-              Copyright © 2023, Western Developers Society
+       
+            <div class="head">
+              <div class="title-download">
+                <img src="assets/link.png" id="logo-downloads"/>
+                <h1 class="title speakable" id="heading-downloads" tabindex="9" data-text="Simple, easy to use, and completely freeto use!">Take notes on the go with the InkLink app</h1>
+                <div class="description">
+                  <p>Simple, easy to use, and completely free!</p>
+                </div>
+                <div class="actions stores-btn">
+                  <a href="https://www.apple.com/ca/app-store/" target="_blank" class="signup speakable" tabindex="10">Apple App Store</a>
+                  <a href="https://play.google.com/store/apps" target="_blank" class="signup speakable" tabindex="11">Google Play</a>
+                </div>
+              </div>
+              
+             
             </div>
-            <div class="elementbuttonlargefilled">
-              <div class="button-label">Apple App Store</div>
-            </div>
-            <div class="elementbuttonlargefilled1">
-              <div class="button-label">Google Play</div>
-            </div>
-            <div class="title">Take notes on the go with the InkLink app</div>
-            <img
-              class="screenshot-2023-11-23-013003-r-icon"
-              alt=""
-              src="./public/screenshot-20231123-013003removebgpreview-11@2x.png"
-            />
-
-            <div class="body">Simple, easy-to-use, and completely free!</div>
-            <img
-              class="picture1-1-icon"
-              alt=""
-              src="./public/picture1-11@2x.png"
-            />
-          </div>
+            <img src="assets/phone-demo.png" class="phone" />
+            <img src="assets/splash-img.png" class="splash" />
         </div>
-      </div>
-    </div>
-    <script src="tts.js"></script>
-    <script type="text/javascript" src="translate.js"></script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <span class="copy">Copyright © 2023, Western Developers Society</div>
+    </main>
+	<script src="script.js"></script>
+  <script src="tts.js"></script>
+  <script type="text/javascript" src="translate.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>
