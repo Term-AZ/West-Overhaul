@@ -20,12 +20,12 @@
     <div class="navbar">
       <div class="pages">
         <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
-        <a tabindex="1" class="speakable" data-text="You are on the navbar"></a>
-        <a href="index.html" tabindex="1" class="speakable navitem" data-text="Home">Home</a>
-        <a href="pricing.html" tabindex="2" class="speakable navitem" data-text="Pricing">Pricing</a>
-        <a href="teams.html" tabindex="3" class="speakable navitem" data-text="InkLink for teams">For Teams</a>
-        <a href="individuals.html" tabindex="4" class="speakable navitem" data-text="InkLink for individuals">For Individuals</a>
-        <a href="mission.html" tabindex="5" class="speakable navitem" data-text="Our Mission">Mission</a>
+        <a tabindex="1" class="speakable" onkeydown="if(event.key === 'Enter') { document.getElementById('read-it').focus(); }" data-text="You are on the navbar, this is our mission page. Press enter to skip directly to page content."></a>
+        <a href="index.html" tabindex="2" class="speakable navitem" data-text="Home">Home</a>
+        <a href="pricing.html" tabindex="3" class="speakable navitem" data-text="Pricing">Pricing</a>
+        <a href="teams.html" tabindex="4" class="speakable navitem" data-text="InkLink for teams">For Teams</a>
+        <a href="individuals.html" tabindex="5" class="speakable navitem" data-text="InkLink for individuals">For Individuals</a>
+        <a href="mission.html" tabindex="6" class="speakable navitem" data-text="Our Mission">Mission</a>
       </div>
       <div class="general">
         <div id="google_translate_element"></div>
@@ -59,7 +59,7 @@
         </div>
         <div class="body-wrapper">
           <div class="body1">
-            <p class="here-at-inklink">
+            <p class="here-at-inklink speakable" tabindex="10" id='read-it' data-text="Here at INKLINK, our mission is to provide free and accessible note taking to all. Whether you are a student, educator, or a colleague, INKLINK is for you.">
               Here at INKLINK, our mission is to provide free and accessible
               note taking to all.
             </p>

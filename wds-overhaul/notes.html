@@ -20,7 +20,7 @@
     <div class="navbar">
       <div class="pages">
         <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
-        <a tabindex="1" class="speakable" onkeydown="if(event.key === 'Enter') { document.getElementById('heading').focus(); }" data-text="You are on the navbar, this is the home page. Press enter to skip directly to page content."></a>
+        <a tabindex="1" class="speakable" onkeydown="if(event.key === 'Enter') { document.getElementById('startSpeechRecognition').focus(); }" data-text="You are on the navbar, this is the notes page. Press enter to start recording"></a>
         <a href="index.html" tabindex="1" class="speakable navitem" data-text="Home">Home</a>
         <a href="pricing.html" tabindex="2" class="speakable navitem" data-text="Pricing">Pricing</a>
         <a href="teams.html" tabindex="3" class="speakable navitem" data-text="InkLink for teams">For Teams</a>
@@ -34,8 +34,8 @@
         <a href="download.html" class="speakable btn" tabindex="8" data-text="Download InkLink">Download</a>
       </div>
     </div>
-    <button id="startSpeechRecognition"><i class="fa-solid fa-microphone"></i></button>
-    <button id="playNoteButton">Play Note</button>
+    <button id="startSpeechRecognition" tabindex="9"><i class="fa-solid fa-microphone"></i></button>
+    <button id="playNoteButton" tabindex="10">Play Note</button>
     <div class="notes_main">
         <div class="sidebar">
             <div class="top">
