@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
         isRecognitionOn = true;
         startSpeechRecognitionBtn.innerHTML = '';
         var newIcon = document.createElement("i");
-        newIcon.classList.add("fas", "fa-microphone-slash")
+        newIcon.classList.add("fas", "fa-microphone-slash", "fa-2x")
         startSpeechRecognitionBtn.appendChild(newIcon);
       } else {
         recognition.stop();
         isRecognitionOn = false;
         startSpeechRecognitionBtn.innerHTML = '';
         var newIcon = document.createElement("i");
-        newIcon.classList.add("fas", "fa-microphone")
+        newIcon.classList.add("fas", "fa-microphone", "fa-2x")
         startSpeechRecognitionBtn.appendChild(newIcon);
       }
     });
