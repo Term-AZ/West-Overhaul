@@ -1,0 +1,25 @@
+/* Customize Quill container */
+#quill-editor {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Customize Quill editor content */
+  .ql-editor {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    background-color: #ebe1e1;
+  }
+  
+  /* Customize Quill toolbar */
+  .ql-toolbar {
+    background-color: #38B6FF;
+    border: 1px solid #ccc;
+  }
+  
+  /* Customize Quill toolbar buttons */
+  .ql-toolbar button {
+    color: #333;
+  }
+
