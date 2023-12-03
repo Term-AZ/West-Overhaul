@@ -38,3 +38,16 @@
     border-radius: 50%;
     background-color: azure;
   }
+  #myIframe {
+    opacity: 0;
+    visibility: hidden;
+    display: none; /* Start with display: none */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Add transitions for opacity and visibility with ease-in-out timing */
+}
+
+#myIframe.visible {
+    opacity: 1;
+    visibility: visible;
+    display: block; /* Display when visible class is applied */
+    pointer-events: auto; /* Enable pointer events when visible */
+}
