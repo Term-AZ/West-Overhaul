@@ -108,7 +108,7 @@
   top: 0;
   right: -53.7%;
   bottom: -183.77%;
-  left: 10.52%;
+  left: 0%;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
@@ -149,8 +149,7 @@
 .blue-box {
   position: absolute;
   top: 0;
-  left: -177px;
-  width: 1682px;
+  width: 100vw;
   height: 342px;
   overflow: hidden;
   font-size: var(--font-size-5xl);

@@ -1,3 +1,6 @@
+body{
+  overflow: hidden;
+}
 .contact5,
 .contact6 {
   position: absolute;
@@ -94,7 +97,7 @@
   top: 669px;
   left: 0;
   border-radius: var(--br-17xl);
-  width: 1225px;
+  width: 1000px;
   height: 822px;
   object-fit: cover;
 }
