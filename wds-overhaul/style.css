@@ -18,13 +18,33 @@ body {
 .navbar a {
     color: var(--link-color);
     text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    color: #000; /* Change the color to your desired text color */
 }
 
-.navbar a:hover {
+.navitem:hover {
     color: var(--btn-primary);
     text-decoration: none;
 }
 
+.navitem:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--btn-primary); /* Change the color to your desired underline color */
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
+}
+
+.navitem:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 .pages {
     display: flex;
     justify-content: flex-start;
